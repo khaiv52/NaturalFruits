@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+:root{
+    --blue:#2980b9;
+    --red:tomato;
+    --orange:orange;
+    --black:#333;
+    --white:#fff;
+    --bg-color:#eee;
+    --dark-bg:rgba(0,0,0,.7);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid #999;
+    }
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.container {
+    position: relative;
+    padding-top: 15rem;
+    display: block;
+}
+
+#form_product{
+    max-width: 500px!important;
+    background-color: var(--white);
+    padding: 2rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+#form_product h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+#form_product .box{
+    text-transform: none;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: .5rem;
+    background-color: var(--bg-color);
+    margin: 1rem 0;
+    width: 100%;
+}
+.delete-btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1.2rem 3rem;
+    border-radius: 6px;
+}
+.option-btn{
+    margin-left: 0 !important; ;
+    margin-right:  0 !important;
+    margin-bottom: 1rem;
+    background-color: #2980b9;
+}
+.footer {
+    margin-top: 2rem;
+}
+section .content {
+    background-color: white;
+    padding: 2rem;
+    width: 700px;
+    margin: 0 auto;
+}
+.delete-btn:hover,
+.option-btn:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
+.delete-btn {
+    background-color: var(--red);
+}
+.option-btn {
+    background-color: var(--orange);
+}
+.delete-btn i,
+.option-btn i{
+    padding-right: .5rem;
+}
+.display-product-table .option-btn {
+    background-color: #2980b9;
+}
+.display-product-table {
+    text-align: center;
+    margin: 0 auto;
+
+}  
+.product-table {
+    margin: 0 auto;
+    width: 1100px;
+}
+.product-table thead th {
+    font-size: 2rem;
+    padding: 1.2rem;
+    background-color: #636e72;
+    color: var(--white);
+}
+.display-product-table .product-table td {
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+.display-product-table .product-table td:first-child{
+    padding: 0;
+}
+.display-product-table .product-table tr:nth-child(odd){
+    background-color: var(--white);
+}
+@media screen and (max-width: 991px){
+    html {
+        font-size: 55%;
+    }
+    .display-product-table .product-table {
+        width: 60rem;
+    }
+}
+@media screen and (max-width: 768px){
+    html {
+        font-size: 50%;
+    }
+    .display-product-table {
+        overflow-x: scroll;
+    }
+    .display-product-table .product-table {
+        width: 50rem;
+    }
+}
+
+
+.display-product-table .empty {
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--black);
+    font-size: 2rem;
+    padding: 1rem;
+}
+.edit-form-container {
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    background-color: var(--dark-bg);
+    padding:10rem 2rem ;
+    display: none;
+    min-height: 100vh;
+    width: 100%;
+}
+.edit-form-container form {
+    border-radius: .5rem;
+    width: 50rem;
+    background-color: var(--white);
+    text-align: center;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.edit-form-container form .box{
+    width: 100%;
+    background-color: var(--bg-color);
+    border-radius: .5rem;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--black);
+    padding: 1.2rem 1.4rem;
+    text-transform: none ;
+}

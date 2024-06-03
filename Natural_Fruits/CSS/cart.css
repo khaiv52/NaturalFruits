@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+:root{
+    --blue:#2980b9;
+    --red:tomato;
+    --orange:orange;
+    --black:#636e72;
+    --white:#fff;
+    --bg-color:#eee;
+    --dark-bg:rgba(0,0,0,.7);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid #999;
+    --black1: #130f40;
+    }
+
+.container h1 {
+    color: black;
+}
+.shopping-cart table{
+    text-align: center;
+    width: 100%;
+}
+.shopping-cart table thead th {
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: var(--white);
+    background-color: #636e72;
+}
+.shopping-cart table tr td {
+    border-bottom: var(--border);
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+}
+.shopping-cart table input[type = "number"] {
+    border: var(--border);
+    padding: 1rem 2rem ;
+    color: var(--black);
+    width: 10rem;
+    font-size: 2rem;
+}
+.shopping-cart table input[type = "submit"]{
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: var(--orange);
+    color: white;
+}
+.shopping-cart table input[type = "submit"]:hover {
+    background-color: #636e72;
+}
+.shopping-cart table .table-bottom {
+    background-color: wheat;
+}
+.checkout-btn a.option-btn{
+    background-color: #2980b9;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 1.5rem 0;
+}
+.checkout-btn a.option-btn:hover {
+    background-color: var(--black1);
+}
+.shopping-cart .checkout-btn {
+    text-align: center;
+    margin-top: 1rem;
+
+}
+.shopping-cart .checkout-btn a {
+    display: inline-block;
+    width: 20rem;
+}
+.shopping-cart .checkout-btn a.disabled {
+    user-select: none;
+    opacity: .5;
+    pointer-events: none;
+}
+/* media */
+@media screen and (max-width: 1200px){
+    .shopping-cart{
+        overflow: scroll;
+    }
+    .shopping-cart table {
+        width: 12rem;
+    }
+    .shopping-cart .heading {
+        text-align: left;
+    }
+    .shopping-cart .checkout-btn {
+        text-align: left;
+    }
+}
+@media screen and (max-width: 991px){
+    html {
+        font-size: 55%;
+    }
+}
+@media screen and (max-width: 768px){
+    html {
+        font-size: 50%;
+    }
+}

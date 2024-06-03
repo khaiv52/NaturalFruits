@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+:root{
+    --blue:#2980b9;
+    --red:tomato;
+    --orange:orange;
+    --black:#636e72;
+    --white:#fff;
+    --bg-color:#eee;
+    --dark-bg:rgba(0,0,0,.7);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid #999;
+    --black1: #130f40;
+    }
+.checkout-form form {
+    padding: 2rem;
+    border-radius: .5rem;
+    background-color: #fff;
+}
+.checkout-form form .flex {
+    /* display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+.checkout-form form .inputBox {
+    background-color: #fff;
+}
+.checkout-form form .inputBox span {
+    font-size: 1.8rem;
+    color: var(--black1);
+    font-weight: 500;
+}
+.checkout-form form .inputBox input, 
+.checkout-form form .inputBox select {
+    background-color: var(--bg-color);
+    width: 100%;
+    font-size: 1.7rem;
+    color: mediumblue;
+    border: .5rem;
+    margin: 1rem 0;
+    padding: 1.2rem 1.4rem; 
+    text-transform: none;
+    border: var(--border);
+    border-radius: 6px;
+}
+.checkout-form form .inputBox option {
+    text-transform: none;
+}
+.display-order {
+    max-width: 50rem;
+    background-color: var(--white);
+    border-radius: .5rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 2rem;
+    border: var(--border);
+}
+.display-order span {
+    display: inline-block;
+    border-radius: .5rem;
+    background-color: var(--bg-color);
+    font-size: 2rem;
+    padding: .5rem 1.5rem;
+    color: var(--black);
+    margin: .5rem;
+}
+.display-order span.grand-total {
+    width: 100%;
+    background-color: var(--orange);
+    color: #fff;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+.order-message-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1100;
+    background-color:var(--dark-bg);
+    width: 100%;
+}
+
+.order-message-container::-webkit-scrollbar {
+    width: 1rem;
+}
+
+.order-message-container::-webkit-scrollbar-track {
+    background-color: var(--dark-bg);
+}
+
+.order-message-container::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+}
+
+.order-message-container .message-container {
+    width: 50rem;
+    background-color: var(--white);
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+    height: 70rem;
+}
+.order-message-container .message-container h3 {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+.order-message-container .message-container .order-detail {
+    background-color: var(--bg-color);
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.order-message-container .message-container .order-detail span {
+    border-radius: .5rem;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+}
+
+.order-message-container .message-container .order-detail span.total {
+    display: block;
+    background-color: var(--red);
+    color: var(--white);
+}
+.order-message-container .message-container .customer-detail {
+    margin: 1rem 0;
+}
+.order-message-container .message-container p {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: var(--black);
+}
+.order-message-container .message-container p span {
+    color: var(--blue);
+    padding: 0 .5rem;
+    text-transform: none;
+}
+
+

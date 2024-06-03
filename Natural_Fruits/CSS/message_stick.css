@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --blue:#2980b9;
+    --red:tomato;
+    --orange:orange;
+    --black:#333;
+    --white:#fff;
+    --bg-color:#eee;
+    --dark-bg:rgba(0,0,0,.7);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid #999;
+}
+.message_sticky{
+    position: fixed;
+    top:0; left:0;
+    z-index: 10000;
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding: 0 2rem;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1.5rem;
+    width: 500px;
+}
+
+.message_sticky span{
+font-size: 2rem;
+color:var(--black);
+width: 100%;
+text-align: center;
+}
+
+.message_sticky i{
+font-size: 2.5rem;
+color:var(--black);
+cursor: pointer;
+}
+
+.message_sticky i:hover{
+color:var(--red);
+}
+.message_sticky{
+    text-align: center;
+}

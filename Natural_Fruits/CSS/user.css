@@ -1,0 +1,119 @@
+@import "style.css";
+:root {
+    --orange: #ff7800;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 1.5rem 1rem rgba(0,0,0,.1);
+    --border: .2rem solid rgba(0,0,0,.1);
+    --outline: .1rem solid rgba(0,0,0,.1);
+    --outline-hover: .2rem solid var(--black);
+    --light-bg: #eee;
+    --red: #e74c3c;
+    --main-color: #8e44ad;
+    --white: #fff;
+}
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+a {
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+body {
+    background: #eee;
+}
+img {
+    display: block;
+}
+section {
+    padding: 2rem 9%;
+}
+.flex-btn {
+    display: flex;
+    gap: 0.7rem;
+    margin: 0 .7rem;
+}
+.footer {
+    padding-top: 10rem;
+}
+.option-btn {
+    display: block;
+    width: 100%;
+}
+.option-btn {
+    background-color: var(--orange);
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    color: var(--white);
+    text-transform: capitalize;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1rem ;
+    margin-bottom: 1rem;
+}
+.option-btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+.header .profile {
+    position: absolute;
+    top: 120%; right: 2rem;
+    background-color: var(--white);
+    border-radius: .5rem;
+    text-align: center;
+    width: 33rem;
+    height: 30rem;
+    transform: scale(0);
+    transform-origin: top right;
+    transition: .2s linear;
+}
+.header .profile.active {
+    transform: scale(1);
+}
+.header .profile a {
+    display: inline-block;
+}
+.profile img {
+    margin: 1.3rem auto;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100rem;
+    object-fit: cover;
+}
+.header .profile h3 {
+    font-size: 2rem;
+    color: var(--black);
+}
+.header .profile span {
+    font-size: 1.6rem;
+    color: var(--light-color);
+    display: block
+}
+.header .profile .user-btn {
+    background-color: var(--main-color);
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    margin: .5rem 0;
+    color: var(--white);
+    text-transform: capitalize;
+    cursor: pointer;
+    text-align: center;
+}
+.header .profile .user-btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+}

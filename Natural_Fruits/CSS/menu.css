@@ -1,0 +1,100 @@
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0;
+}
+#main-menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav> ul li{
+    list-style: none;
+}
+
+#main-menu li {
+    position: relative;
+}
+#main-menu li a{
+    display: block;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+#main-menu ul.sub-menu {
+    position: absolute;
+    background-color: #fff;
+    padding: 40px 0px;
+    width: 200px;
+    border-bottom: 1px solid rgb(208, 200, 128);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: none;
+
+}
+#main-menu ul.sub-menu a {
+    padding: 12px 15px;
+    border-bottom: 1px solid rgb(208, 200, 128);
+}
+#main-menu ul.sub-menu li:hover a {
+    border-bottom: 1px solid rgb(76, 111, 4);;
+} 
+#main-menu ul.sub-menu li:last-child a{
+    border: none;
+} 
+.navbar #main-menu li:hover >ul.sub-menu{
+    display:  block;
+}
+/* Thiết lập border khi hover */
+.navbar #main-menu>li>a {
+    position: relative;
+}
+.navbar #main-menu>li>a::before {
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: #fdcb6e;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.navbar #main-menu>li:hover>a::before {
+    width: 100%;
+}
+
+@media screen and (max-width: 767.98px) {
+    .navbar.active {
+        width: 30rem;
+    }
+    #main-menu {
+        flex-direction: column;
+        padding: 10px 0;
+        margin: 0;
+        row-gap: 5px;
+    }
+    
+    #main-menu li {
+        padding: 5px 0;
+    }
+}
+
+@media screen and (max-width: 374.98px) {
+    .header .navbar {
+        top: 100%;
+    }
+    
+    .navbar.active {
+        position: absolute;
+        right: 2rem;
+        left: 0;
+        width: 100%;
+    }
+
+    .navbar #main-menu>li>a {
+        font-size: 15px;
+        text-align: center;
+    }
+}
